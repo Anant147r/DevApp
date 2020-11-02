@@ -38,12 +38,11 @@ const EditProfile = ({
         loading || !profile.githubusername ? "" : profile.githubusername,
       bio: loading || !profile.bio ? "" : profile.bio,
       twitter: loading || !profile.twitter ? "" : profile.twitter,
-      facebook: loading || !profile.facebook ? "" : profile.facebook,
       linkedin: loading || !profile.linkedin ? "" : profile.linkedin,
       facebook: loading || !profile.facebook ? "" : profile.facebook,
       instagram: loading || !profile.instagram ? "" : profile.instagram,
     });
-  }, [loading]);
+  }, [loading, getCurrentProfile]);
 
   const {
     company,
